@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = library:main
+      [console_scripts]
+      initialize_library_db = library.scripts.initializedb:main
+      
