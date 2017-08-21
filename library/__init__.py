@@ -8,7 +8,7 @@ def main(global_config, **settings):
     config.include('pyramid_mako')
 
     config.add_static_view('static', 'static', cache_max_age=3600)
-    #config.include('.models')
+    config.include('.models')
     config.include('.routes')
     config.add_route('home', '/')
     config.add_route('hello', '/hello')
