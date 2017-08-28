@@ -7,6 +7,8 @@ def main(global_config, **settings):
     config = Configurator(settings=settings)
     config.include('pyramid_mako')
 
+
+#Routing the urls of the application
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.include('.models')
     config.include('.routes')
