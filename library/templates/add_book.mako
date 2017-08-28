@@ -12,10 +12,10 @@
 
   </head>
 
-#Form to add a new book in the library database
+## Form to add a new book in the library database
 <body>
- <h3>Movie</h3>
- <form name="add_book" action="/books" method="POST">
+ <h3>Enter details for a New Book</h3>
+ <form name="add_book" action="/new_book" method="POST">
     <table border="1" width="100%">
         <tr>
             <td>Name</td><td><input type="text" name="name" value=""/></td>
@@ -33,10 +33,13 @@
             <td>Edition</td><td width="100%"><input type="text" name="edition" value="" /></td>
         </tr>
         <tr>
-            <td>Address Published</td><td><input type="date" name="publication_address" value="" /></td>
+            <td>Address Published</td><td><input type="text" name="publication_address" value="" /></td>
+        </tr>
+        <tr>
+            <td>Location in Library</td><td><input type="text" name="location" value="" /></td>
         </tr>
     </table>
-    <input type="submit" value="Update" />
+    <input type="submit" value="Add Book" />
  </form>
 </body>
 </html>
